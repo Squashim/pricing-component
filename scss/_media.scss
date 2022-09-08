@@ -1,1 +1,5 @@
-
+@mixin laptop {
+	@media screen and (min-width: 1025px) {
+		@content;
+	}
+}

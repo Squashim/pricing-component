@@ -1,19 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
 
-$fontGrotesk: "Space Grotesk", sans-serif;
-$fw500: 500;
-$fs18: 18px;
+$fontFamily: "Manrope", sans-serif;
 
 //primary
-
-//(active input border)
-$primaryActive: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
-
-//(input errors)
-$primaryError: hsl(0, 100%, 66%);
+$fullSliderBg: hsl(174, 77%, 80%);
+$sliderBg: hsl(174, 86%, 45%);
+$discountBg: hsl(14, 92%, 95%);
+$discountText: hsl(15, 100%, 70%);
+$ctaColor: hsl(226, 100%, 87%);
 
 //neutral
 $white: hsl(0, 0%, 100%);
-$neutral200: hsl(270, 3%, 87%);
-$neutral300: hsl(279, 6%, 55%);
-$neutral400: hsl(278, 68%, 11%);
+$mainBg: hsl(230, 100%, 99%);
+$emptySliderBg: hsl(224, 65%, 95%);
+$toggleBg: hsl(223, 50%, 87%);
+$textColor: hsl(225, 20%, 60%);
+$ctaBg: hsl(227, 35%, 25%);

@@ -1,2 +1,23 @@
 @import "var";
 @import "media";
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	background-color: $mainBg;
+	font-family: $fontFamily;
+	background-image: url(/images/bg-pattern.svg);
+	background-repeat: no-repeat;
+	background-position: top left;
+	@include laptop {
+		background-size: contain;
+	}
+}
