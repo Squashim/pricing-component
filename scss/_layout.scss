@@ -2,20 +2,28 @@
 @import "media";
 
 header {
+	padding: 20px;
 	width: 100%;
 	text-align: center;
-	&__container {
-		height: 100%;
-		position: relative;
-		img {
-			position: absolute;
-			top: 200px;
-		}
-	}
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(/images/pattern-circles.svg);
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
 	h1 {
 		color: $ctaBg;
+		font-size: 20px;
+		@include laptop {
+			font-size: 30px;
+		}
 	}
 	p {
+		padding: 0 60px;
+		margin-top: 15px;
 		font-size: 15px;
 		color: $textColor;
 	}

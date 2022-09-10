@@ -10,6 +10,7 @@
 }
 
 body {
+  padding: 40px 0;
   min-height: 100vh;
   width: 100%;
   background-color: hsl(230deg, 100%, 99%);
@@ -25,21 +26,30 @@ body {
 }
 
 header {
+  padding: 20px;
   width: 100%;
   text-align: center;
-}
-header__container {
-  height: 100%;
-  position: relative;
-}
-header__container img {
-  position: absolute;
-  top: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/images/pattern-circles.svg);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 header h1 {
   color: hsl(227deg, 35%, 25%);
+  font-size: 20px;
+}
+@media screen and (min-width: 1025px) {
+  header h1 {
+    font-size: 30px;
+  }
 }
 header p {
+  padding: 0 60px;
+  margin-top: 15px;
   font-size: 15px;
   color: hsl(225deg, 20%, 60%);
 }/*# sourceMappingURL=main.css.map */
