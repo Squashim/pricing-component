@@ -52,4 +52,8 @@ header p {
   margin-top: 15px;
   font-size: 15px;
   color: hsl(225deg, 20%, 60%);
+}
+
+main {
+  background-color: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=main.css.map */
