@@ -341,6 +341,7 @@ main .bottom-container button:hover {
 }
 
 footer {
+  padding: 0 20px;
   text-align: center;
   font-size: 12px;
   color: hsl(225deg, 20%, 60%);
