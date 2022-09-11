@@ -18,7 +18,7 @@ body {
 	width: 100%;
 	background-color: $mainBg;
 	font-family: $fontFamily;
-	background-image: url(../images/bg-pattern.svg);
+	background-image: url("../images/bg-pattern.svg");
 	background-repeat: no-repeat;
 	background-position: top left;
 	@include laptop {
