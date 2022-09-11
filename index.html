@@ -19,34 +19,43 @@
 			<p>Sign-up for our 30-day trial. No credit card required.</p>
 		</header>
 		<main>
-			<div>
-				<h2 class="amount">100k pageviews</h2>
+			<div class="top-container">
+				<div>
+					<h2 class="amount">100k pageviews</h2>
+				</div>
+				<div class="slider-container">
+					<input type="range" />
+				</div>
 				<div class="price-container">
-					<h2 class="price">$16.00</h2>
+					<h3 class="price">$16.00</h3>
 					<p class="per">/month</p>
 				</div>
-			</div>
-			<input type="range" />
 
-			<div class="billing">
-				<p>Monthly Billing</p>
-				<div class="switch"></div>
-				<p>Yearly Billing</p>
-				<span>25% discount</span>
+				<div class="billing">
+					<p>Monthly Billing</p>
+					<label class="switch">
+						<input type="checkbox" />
+						<span class="slider"></span>
+					</label>
+					<p>Yearly Billing</p>
+					<span class="discount">-25%</span>
+				</div>
 			</div>
 
-			<div class="main-bottom">
-				<div>
-					<img src="/images/icon-check.svg" alt="" />
-					<p>Unlimited websites</p>
-				</div>
-				<div>
-					<img src="/images/icon-check.svg" alt="" />
-					<p>100% data ownership</p>
-				</div>
-				<div>
-					<img src="/images/icon-check.svg" alt="" />
-					<p>Email reports</p>
+			<div class="bottom-container">
+				<div class="check-wrapper">
+					<div>
+						<img src="/images/icon-check.svg" alt="" />
+						<p>Unlimited websites</p>
+					</div>
+					<div>
+						<img src="/images/icon-check.svg" alt="" />
+						<p>100% data ownership</p>
+					</div>
+					<div>
+						<img src="/images/icon-check.svg" alt="" />
+						<p>Email reports</p>
+					</div>
 				</div>
 				<button>Start my trial</button>
 			</div>

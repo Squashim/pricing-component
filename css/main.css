@@ -12,6 +12,9 @@
 body {
   padding: 40px 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   background-color: hsl(230deg, 100%, 99%);
   font-family: "Manrope", sans-serif;
@@ -38,6 +41,11 @@ header {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 1025px) {
+  header {
+    margin-top: 10px;
+  }
+}
 header h1 {
   color: hsl(227deg, 35%, 25%);
   font-size: 20px;
@@ -56,4 +64,228 @@ header p {
 
 main {
   background-color: hsl(0deg, 0%, 100%);
+  margin: 40px 0;
+  max-width: 550px;
+  width: calc(100% - 60px);
+  border-radius: 10px;
+  box-shadow: 0px 8px 24px -8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1025px) {
+  main {
+    margin: 50px 0;
+  }
+}
+main .top-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 70px);
+}
+@media screen and (min-width: 1025px) {
+  main .top-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 70px);
+  }
+}
+main .top-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1025px) {
+  main .top-container div {
+    order: 1;
+  }
+}
+main .top-container div .amount {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: hsl(225deg, 20%, 60%);
+}
+main .top-container .slider-container {
+  padding: 25px 15px;
+  width: 100%;
+}
+@media screen and (min-width: 1025px) {
+  main .top-container .slider-container {
+    padding: 25px 40px;
+    order: 3;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+}
+main .top-container .slider-container input {
+  width: 100%;
+}
+main .top-container .price-container {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+@media screen and (min-width: 1025px) {
+  main .top-container .price-container {
+    order: 2;
+  }
+}
+main .top-container .price-container h3 {
+  font-size: 36px;
+  color: hsl(227deg, 35%, 25%);
+}
+main .top-container .price-container p {
+  color: hsl(225deg, 20%, 60%);
+  font-size: 15px;
+}
+main .top-container .billing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  padding: 25px 0;
+  gap: 5px;
+}
+@media screen and (min-width: 375px) {
+  main .top-container .billing {
+    font-size: 15px;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  main .top-container .billing {
+    order: 4;
+    grid-column: 1/-1;
+  }
+}
+main .top-container .billing .switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+main .top-container .billing .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+  background: hsl(223deg, 50%, 87%);
+  border-radius: 35px;
+  padding: 4px;
+}
+main .top-container .billing .switch input {
+  display: none;
+}
+main .top-container .billing .switch .slider::before {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  content: "";
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: hsl(0deg, 0%, 100%);
+  transition: 0.5s;
+}
+main .top-container .billing .switch input:checked + .slider {
+  background-color: hsl(174deg, 86%, 45%);
+}
+main .top-container .billing .switch input:checked + .slider::before {
+  left: 70%;
+}
+main .top-container .billing p {
+  color: hsl(225deg, 20%, 60%);
+  text-align: center;
+}
+main .top-container .billing .discount {
+  color: hsl(15deg, 100%, 70%);
+  background-color: hsl(14deg, 92%, 95%);
+  padding: 2px 5px;
+  font-size: 12px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+main .bottom-container {
+  border-top: 2px solid hsl(230deg, 100%, 99%);
+  padding: 25px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1025px) {
+  main .bottom-container {
+    flex-direction: row;
+  }
+}
+main .bottom-container .check-wrapper {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 375px) {
+  main .bottom-container .check-wrapper {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+  main .bottom-container .check-wrapper {
+    margin-bottom: 0;
+    align-items: baseline;
+  }
+}
+main .bottom-container .check-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main .bottom-container .check-wrapper div img {
+  width: 9px;
+  height: 8px;
+}
+main .bottom-container .check-wrapper div p {
+  font-size: 15px;
+  color: hsl(225deg, 20%, 60%);
+}
+main .bottom-container button {
+  background-color: hsl(227deg, 35%, 25%);
+  border: 0;
+  color: hsl(226deg, 100%, 87%);
+  outline: none;
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+  border-radius: 25px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+@media screen and (min-width: 375px) {
+  main .bottom-container button {
+    padding: 12px 60px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  main .bottom-container button {
+    padding: 12px 40px;
+  }
+}
+main .bottom-container button:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: hsl(225deg, 20%, 60%);
+}
+footer a {
+  color: hsl(227deg, 35%, 25%);
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
